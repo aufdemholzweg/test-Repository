@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Level 2: Ausblick - HOLZEN!</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif;
+            background-color: #fdfbf7; 
+            touch-action: manipulation; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Animationen für das Erscheinungsbild */
+        .animate-pop-in { animation: pop-in 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+        @keyframes pop-in { 
+            0% { transform: scale(0.8); opacity: 0; } 
+            100% { transform: scale(1); opacity: 1; } 
+        }
+
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* Hintergrund-Muster */
+        .bg-pattern {
+            background-image: radial-gradient(#fbbf24 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body class="relative text-gray-800 overflow-hidden">
+
+    <div class="absolute inset-0 bg-pattern pointer-events-none"></div>
+
+    <header class="fixed top-0 left-0 w-full bg-gradient-to-r from-green-600 to-emerald-700 text-white shadow-md z-50">
+        <div class="max-w-[600px] mx-auto px-4 py-3 relative flex justify-end items-center h-16">
+            
+            <h1 class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-xl sm:text-2xl font-black 
+            tracking-wider uppercase drop-shadow-sm whitespace-nowrap pointer-events-none">🚀 LEVEL 2</h1>
+            
+            <a href="https://aufdemholzweg.github.io/Splashscreen-Holztechnik/" class="relative z-50 w-10 h-10 bg-white/20 hover:bg-white/30 rounded-xl flex items-center justify-center text-white shadow-md border-2 border-white/20 hover:scale-105 transition-transform" aria-label="Zurück zur Lernwelt">
+                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 22c0-8 3-14 8-20" opacity="0.9" />
+                    <path d="M2 16c2-4 4-8 5-14" opacity="0.6" />
+                    <path d="M8 22c1-6 2-10 6-12 3-1.5 6 0 8 4" opacity="0.8" />
+                    <path d="M13 22c1-4 3-8 7-8" opacity="0.7" />
+                    <path d="M18 22c1-3 2-6 4-6" opacity="0.5" />
+                    <path d="M16 2c2 1 4 4 6 7" opacity="0.6" />
+                  </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow flex flex-col items-center justify-center p-6 w-full max-w-[600px] mx-auto relative z-10 pt-24">
+        
+        <div class="bg-white rounded-3xl shadow-2xl p-8 w-full text-center border-4 border-white animate-pop-in relative">
+            
+            <div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-gradient-to-br from-amber-500 to-orange-600 w-20 h-20 rounded-2xl rotate-3 shadow-lg flex items-center justify-center border-4 border-white z-20">
+                <span class="text-4xl">🚧</span>
+            </div>
+
+            <h2 class="text-2xl sm:text-3xl font-black text-gray-800 mt-8 mb-4 uppercase tracking-tight">Work in Progress</h2>
+            
+            <p class="text-gray-600 mb-6 leading-relaxed">
+                Stark! Du hast Level 1 gemeistert und dir diesen Ausblick verdient.
+            </p>
+
+            <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-6 text-left shadow-sm">
+                <h3 class="font-bold text-amber-800 mb-2 flex items-center gap-2">
+                    <span class="text-xl">🔮</span> Zukunftsmusik
+                </h3>
+                <p class="text-sm text-gray-700 mb-3">
+                    Im Rahmen dieser Masterarbeit demonstriert Level 1 das Grundprinzip der Gamifizierung. An dieser Stelle könnten in Zukunft erweiterte Spielmodi entstehen, wie zum Beispiel:
+                </p>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li class="flex items-start gap-2">
+                        <span class="text-green-600 font-bold">✓</span>
+                        <span><strong>Mikroskopie-Challenge:</strong> Hölzer anhand von Zellstrukturen erkennen.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-green-600 font-bold">✓</span>
+                        <span><strong>Werkstatt-Quiz:</strong> Fragen zur Sicherheit und Maschinenkunde.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-green-600 font-bold">✓</span>
+                        <span><strong>Holz-Memory:</strong> Paare aus Rinde und Schnittware finden.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mb-6 animate-float">
+                <img src="https://github.com/aufdemholzweg/HOLZEN/blob/main/images/klotzi_menu.png?raw=true" alt="Klotzi baut" class="w-32 mx-auto drop-shadow-xl" onerror="this.style.display='none'">
+            </div>
+
+            <p class="text-xs text-gray-400 font-mono">Status: Konzeptphase • Masterarbeit 2026</p>
+
+        </div>
+
+        <a href="https://aufdemholzweg.github.io/HOLZEN/" class="mt-8 bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-8 rounded-full shadow-lg transition transform active:scale-95 no-underline flex items-center gap-2">
+            <span>🔙</span> Zurück zum Hauptspiel
+        </a>
+
+    </main>
+
+    <footer class="p-4 text-center text-gray-400 text-xs relative z-10">
+        &copy; 2026 Christopher Lehr • Leibniz Universität Hannover
+    </footer>
+
+    <script>
+        // Kleiner Konfetti-Effekt beim Laden, um den "Erfolg" des Freischaltens zu feiern
+        window.onload = function() {
+            var duration = 1500;
+            var end = Date.now() + duration;
+
+            (function frame() {
+                confetti({
+                    particleCount: 3,
+                    angle: 60,
+                    spread: 55,
+                    origin: { x: 0 },
+                    colors: ['#10b981', '#34d399', '#fbbf24'] // Grün und Gelb Töne
+                });
+                confetti({
+                    particleCount: 3,
+                    angle: 120,
+                    spread: 55,
+                    origin: { x: 1 },
+                    colors: ['#10b981', '#34d399', '#fbbf24']
+                });
+
+                if (Date.now() < end) {
+                    requestAnimationFrame(frame);
+                }
+            }());
+        };
+    </script>
+</body>
+</html>
