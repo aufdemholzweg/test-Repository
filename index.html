@@ -75,27 +75,23 @@
                 Stark! Du hast Level 1 gemeistert und dir diesen Ausblick verdient.
             </p>
 
-            <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-6 text-left shadow-sm">
-                <h3 class="font-bold text-amber-800 mb-2 flex items-center gap-2">
-                    <span class="text-xl">🔮</span> Zukunftsmusik
+            <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-6 text-left shadow-sm">
+                <h3 class="font-bold text-amber-800 mb-3 flex items-center gap-2">
+                    <span class="text-xl">🔮</span> Ausblick & Feedback
                 </h3>
-                <p class="text-sm text-gray-700 mb-3">
-                    Im Rahmen dieser Masterarbeit demonstriert Level 1 das Grundprinzip der Gamifizierung. An dieser Stelle könnten in Zukunft erweiterte Spielmodi entstehen, wie zum Beispiel:
+                
+                <p class="text-sm text-gray-700 mb-4 leading-relaxed">
+                    Hier könnten in Zukunft weitere Spiele entstehen. Programmiere gerne mit! Den Code des Lernspiels "Holzen" findest du im Impressum unter <strong>"Open Source & Lizenz (CC BY 4.0)"</strong>.
                 </p>
-                <ul class="space-y-2 text-sm text-gray-600">
-                    <li class="flex items-start gap-2">
-                        <span class="text-green-600 font-bold">✓</span>
-                        <span><strong>Mikroskopie-Challenge:</strong> Hölzer anhand von Zellstrukturen erkennen.</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <span class="text-green-600 font-bold">✓</span>
-                        <span><strong>Werkstatt-Quiz:</strong> Fragen zur Sicherheit und Maschinenkunde.</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <span class="text-green-600 font-bold">✓</span>
-                        <span><strong>Holz-Memory:</strong> Paare aus Rinde und Schnittware finden.</span>
-                    </li>
-                </ul>
+
+                <div class="bg-white/60 rounded-lg p-3 border border-amber-100">
+                    <p class="text-sm text-gray-700 mb-3 font-medium">
+                        Nimm auch gerne an meiner Umfrage teil und lass mich wissen, wie du das Spiel fandest:
+                    </p>
+                    <a href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__dAg5EZUN1FHWU9RN1gxNVVQQ0YwQ1BCTlFEVkNZMi4u&route=shorturl" target="_blank" class="block w-full bg-violet-600 hover:bg-violet-700 text-white font-bold py-3 px-4 rounded-lg text-center shadow-md transition transform active:scale-95 no-underline flex items-center justify-center gap-2">
+                        <span>📝</span> Zur Umfrage
+                    </a>
+                </div>
             </div>
 
             <div class="mb-6 animate-float">
@@ -117,7 +113,7 @@
     </footer>
 
     <script>
-        // Kleiner Konfetti-Effekt beim Laden, um den "Erfolg" des Freischaltens zu feiern
+        // Kleiner Konfetti-Effekt beim Laden
         window.onload = function() {
             var duration = 1500;
             var end = Date.now() + duration;
@@ -128,7 +124,7 @@
                     angle: 60,
                     spread: 55,
                     origin: { x: 0 },
-                    colors: ['#10b981', '#34d399', '#fbbf24'] // Grün und Gelb Töne
+                    colors: ['#10b981', '#34d399', '#fbbf24']
                 });
                 confetti({
                     particleCount: 3,
